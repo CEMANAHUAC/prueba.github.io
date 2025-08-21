@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestros Colores</title>
+</head>
+<body>
+    
+    <hr class="colored-line">
+<style>
+    .colored-line {
+  height: 25px;              /* Define el grosor de la línea */
+  background-color: #efd588;    /* Color de la línea */
+  border: none;             /* Elimina bordes adicionales por defecto */
+}
+</style>
+
+<section aria-labelledby="info-section" class="info-section">
+  <header class="info-header">
+    <h2 id="info-section">Nuestra Representación</h2>
+  </header>
+
+  <div class="info-content">
+    <article class="info-article">
+      <header>
+        <h3>Los cuatro rumbos cardinales en la cosmovisión mexica</h3>
+      </header>
+      <p>Cada uno de estos puntos simboliza fuerzas cósmicas fundamentales y está vinculado a un color.</p>
+      <footer>
+        <p><time datetime="2025-08-19"></time></p>
+      </footer>
+    </article>
+
+    <article class="info-article">
+      <header>
+        <h3>¿Por qué el color verde?</h3>
+      </header>
+      <p>Representa el punto donde se cruzan los cuatro rumbos, fundamento del orden universal.
+         "Eje cósmico y equilibrio universal"</p>
+    </article>
+  </div>
+
+  <aside class="info-aside">
+    <h4>Nota </h4>
+    <p>Estas direcciones configuran un sistema cósmico que representa un equilibrio entre fuerzas opuestas y complementarias.</p>
+  </aside>
+
+ 
+</section>
+
+<style>
+
+    body {
+
+     overflow-x:hidden;
+  font-family: "Montserrat", sans-serif;
+   font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+    /* Reset básico para control total */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilo general de la sección de información */
+.info-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+ 
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Encabezado principal */
+.info-header h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid #69a442;
+  display: inline-block;
+}
+
+/* Contenedor flexible para artículos e información lateral */
+.info-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Estilo de cada artículo dentro del contenido */
+.info-article {
+  flex: 1 1 250px;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.info-article h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+  color: #69a442;
+}
+
+.info-article p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* Texto de fecha en estilo sutil */
+.info-article footer p {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 0.75rem;
+}
+
+/* Estilo del aside (nota complementaria) */
+.info-aside {
+  border-left: 3px solid #69a442;
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.info-aside h4 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #696969;
+}
+
+/* Pie de sección (footer) */
+.info-footer p {
+  font-size: 0.9rem;
+}
+.info-footer a {
+  color: #007acc;
+  text-decoration: none;
+}
+.info-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Adaptabilidad a móviles */
+@media (max-width: 600px) {
+  .info-content {
+    flex-direction: column;
+  }
+}
+
+</style>
+
+
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 4</div>
+    <img src="ptlahuiztlampa.jpg" style="width:100%">
+    <div class="text">Tlahuiztlampa: Representa el amanecer, el nacimiento del sol y el inicio del ciclo de vida.</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="pcihuatlampa.jpg" style="width:100%">
+    <div class="text">Cihuatlampa: "El rumbo de donde habitan mujeres", El ocaso, lugar femenino y transición. Se asocia con mujeres heroicas que acompañaban al sol en su ocaso.</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="phuiztlampa.jpg" style="width:100%">
+    <div class="text">El mediodía, plenitud del sol, fuerza vital y fertilidad.</div>
+  </div>
+
+   <div class="mySlides fade">
+    <div class="numbertext">4 / 4</div>
+    <img src="pmictlampa.jpg" style="width:100%">
+    <div class="text">Mictlampa: Región del inframundo y la muerte. Se asocia al fin, la oscuridad, y los ancestros.</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+<style>
+   
+    .slideshow-container { max-width: 500px; position: relative; margin: auto; }
+.mySlides { display: none; }
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next { right: 0; border-radius: 3px 0 0 3px; }
+.prev:hover, .next:hover { background-color: rgba(0,0,0,0.8); }
+.text {
+  color: white;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px; width: 15px;
+  margin: 0 2px;
+  background-color: #717171;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover { background-color: #424242; }
+.fade { animation-name: fade; animation-duration: 1.5s; }
+@keyframes fade { from {opacity: .4} to {opacity: 1} }
+
+</style>
+
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  const slides = document.getElementsByClassName("mySlides");
+  const dots = document.getElementsByClassName("dot");
+  if (n > slides.length) slideIndex = 1;
+  if (n < 1) slideIndex = slides.length;
+  for (i = 0; i < slides.length; i++) slides[i].style.display = "none";
+  for (i = 0; i < dots.length; i++) dots[i].className = dots[i].className.replace(" active", "");
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}
+
+</script>
+<p></p>
+<hr class="colored-line">
+<style>
+    .colored-line {
+  height: 25px;              /* Define el grosor de la línea */
+  background-color: #efd588;    /* Color de la línea */
+  border: none;             /* Elimina bordes adicionales por defecto */
+}
+
+</style>
+
+</body>
+</html>
