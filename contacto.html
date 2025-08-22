@@ -38,82 +38,352 @@
                 <h1>CONTACTO</h1>
             </div>
     </header>
+<p></p>
+     <div class="social-wrapper">
+    <a href="https://www.facebook.com/share/14NUZS46QDW/?mibextid=wwXIfr" class="icon facebook">
+      <div class="layer"><span class="fab fa-facebook-f"></span></div>
+      <div class="text">Facebook</div>
+    </a>
+    <a href="http://www.youtube.com/@CemAn%C3%A1huac-w1s" class="icon twitter">
+      <div class="layer"><span class="fab fa-youtube"></span></div>
+      <div class="text">Youtube</div>
+    </a>
+    <a href="#" class="icon instagram">
+      <div class="layer"><span class="fab fa-instagram"></span></div>
+      <div class="text">Instagram</div>
+    </a>
+    <a href="#" class="icon linkedin">
+      <div class="layer"><span class="fab fa-tiktok"></span></div>
+      <div class="text">Tiktok</div>
+    </a>
+  </div>
+  <p></p>
+  <style>
+   .body{
+     font-family: "Montserrat", sans-serif;
+   font-size: 16px;
+   } 
 
+.social-wrapper {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.icon {
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  width: 60px;
+  height: 60px;
+  color: #efd588; 
+}
+
+.layer {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  border: 2px solid;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.text {
+     font-family: "Montserrat", sans-serif;
+   font-size: 16px;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  opacity: 0;
+  transition: bottom 0.3s ease, opacity 0.3s ease;
+  white-space: nowrap;
+}
+
+.icon:hover .layer {
+  transform: translateY(-30px);
+}
+
+.icon:hover .text {
+     font-family: "Montserrat", sans-serif;
+  bottom: 5px;
+  opacity: 1;
+}
+
+.facebook .layer { border-color: #efd588; }
+.facebook .text { background: #254627; }
+
+
+.twitter .layer { border-color: #efd588; }
+.twitter .text { background: #254627; }
+
+.instagram .layer { border-color: #efd588; }
+.instagram .text { background: #254627; }
+
+.linkedin .layer { border-color: #efd588; }
+.linkedin .text { background: #254627; }
+
+/* Adaptación para móviles */
+@media (max-width: 600px) {
+  .icon {
+    width: 50px;
+    height: 50px;
+  }
+  .layer {
+    border-radius: 6px;
+  }
+  .layer .fa {
+    font-size: 1.1rem;
+  }
+  .text {
+    font-size: 0.75rem;
+    bottom: -28px;
+  }
+}
+  </style>
+<style>
+    .info-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* separación entre las cajas */
+  flex-wrap: wrap;
+}
+
+.info-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: default;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon-container {
+  width: 80px;
+  height: 80px;
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.icon-container i {
+  font-size: 2rem;
+  color: #254627;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.info-box span {
+  font-size: 1rem;
+  color: #254627;
+  transition: color 0.3s ease;
+}
+
+/* Hover animado */
+.info-box:hover .icon-container {
+  background-color: #254627;
+}
+.info-box:hover i {
+  color: #efd588;
+  transform: scale(1.1);
+}
+.info-box:hover span {
+  color: #254627;
+}
+
+/* Adaptación para móviles */
+@media (max-width: 480px) {
+  .icon-container {
+    width: 60px;
+    height: 60px;
+  }
+  .icon-container i {
+    font-size: 1.5rem;
+  }
+  .info-box span {
+    font-size: 0.9rem;
+  }
+}
+
+</style>
+  <section class="contact-wrapper">
+  <div class="info-section">
+  <div class="info-box">
+    <div class="icon-container">
+      <i class="fas fa-phone-alt"></i>
+    </div>
+    <span>+52 55  6798 7645</span>
+  </div>
+  <div class="info-box">
+    <div class="icon-container">
+      <i class="fas fa-envelope"></i>
+    </div>
+    <span> cemanahuac.ac@gmail.com</span>
+  </div>
+   <div class="info-box">
+    <div class="icon-container">
+      <i class="fas fa-map-marker-alt"></i>
+    </div>
+    <span> Calle Dr Martínez del Río 150, Doctores, Cuauhtémoc, 06720 Ciudad de México, CDMX, México</span>
+  </div>
+</div>
+  <div class="map-section">
+    <div class="map-container">
+      <iframe
+       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.8837759066846!2d-99.1538820245662!3d19.41742704116487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff24298748a5%3A0x650bdecfbb1bb768!2sCalle%20Dr%20Mart%C3%ADnez%20del%20R%C3%ADo%20150%2C%20Doctores%2C%20Cuauht%C3%A9moc%2C%2006720%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1sen!2smx!4v1754537534962!5m2!1sen!2smx" 
+ width="" height="" alt="center" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <p class="map-text">Estamos aquí</p>
+  </div>
+</section>
+<style>
+    .contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info-item {
+ 
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+   margin: 0 10px; /* espacio en ambos lados */
+  
+}
+
+.info-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.info-item i {
+  margin-right: 10px;
+  font-size: 1.4rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.info-item span {
+  font-size: 1.3rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.info-item:hover i,
+.info-item:hover span {
+  color: #efd588;
+}
+
+/* Mapa responsive */
+.map-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 ratio */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.map-container:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  border: 0;
+}
+
+.map-text {
+  text-align: center;
+  margin-top: 8px;
+  font-size: 1.2rem;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.map-container:hover + .map-text {
+  color: #254627;
+}
+
+/* Layout horizontal en pantallas amplias */
+@media (min-width: 768px) {
+  .contact-wrapper {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .info-section, .map-section {
+    flex: 1;
+  }
+  .info-section {
+    gap: 20px;
+  }
+}
+</style>
 
 
              
-    <section class="coffee">      
-        <div class="coffee-content container">
-
-             <div class="services-group">
-
-                <div class="services-1">
-                    <a href="https://www.youtube.com" target="_blank">
-                    <img src="r1youtube.jpg" alt="" >
-                    </a>
-                    <h3>Youtube</h3>
-                </div>
-                <div class="services-1">
-                    <a href="https://www.facebook.com/share/14NUZS46QDW/?mibextid=wwXIfr" target="_blank">
-                    <img src="r1facebook.jpg" alt="" >
-                     </a>
-                    <h3>Facebook</h3>
-                </div>
-                <div class="services-1">
-                    <img src="r1instagram.jpg" alt="" >
-                    <h3>Instagram</h3>
-                </div>
-                 <div class="services-1">
-                    <img src="r1tiktok.jpg" alt="" >
-                    <h3>Tiktok</h3>
-                </div>
-
-            </div>
-            <p></p>
-           
-            <p class="txt-p">
-             <h2>CONOCENOS</h2>
-             <br>Acércate con nosotros 
-            </p>
-<div class="coffee-group">
-
-    <div class="coffee-1">
-        <img src="telefono.jpg" alt="">
-        <h3>Telefono</h3>
-        <p>
-           5567987645
-        </p>
-
-    </div>
-
-    <div class="coffee-1">
-        <img src="correo.jpg" alt="">
-        <h3>Gmail</h3>
-        <p>
-            cemanahuac.ac@gmail.com
-        </p>
-
-    </div>
-
-    <div class="coffee-1">
-        <img src="ubicacion.jpg" alt="">
-        <h3>Ubicacion</h3>
-        <p>
-            Calle Dr Martínez del Río 150, Doctores, Cuauhtémoc, 06720 Ciudad de México, CDMX, México
-        </p>
-       
-
-    </div> 
-<div class="map-responsive">
-     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.8837759066846!2d-99.1538820245662!3d19.41742704116487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff24298748a5%3A0x650bdecfbb1bb768!2sCalle%20Dr%20Mart%C3%ADnez%20del%20R%C3%ADo%20150%2C%20Doctores%2C%20Cuauht%C3%A9moc%2C%2006720%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1sen!2smx!4v1754537534962!5m2!1sen!2smx" 
- width="400" height="450" alt="center" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
- </div>
   
-</div>
 
-        </div>
-        
-    </section>
+
+
+
+
+
+
+
+<main class="contact-page">
+    <h1>Contáctanos</h1>
+    <p>¿Tienes preguntas? Estamos aquí para ayudarte.</p>
+    <form class="contact-form">
+      <input type="text" placeholder="Nombre completo" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <input type="tel" placeholder="Teléfono (opcional)">
+      <textarea placeholder="Tu mensaje" rows="4" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+ <script src="https://dashboard.emailjs.com/admin/account"></script>
+<script>
+  (function(){
+    emailjs.init('PAeHm32Hu7rPu2Q8p');  
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+      emailjs.sendForm('service_vhkef9e', 'template_0e3to2s', this)
+        .then(function() {
+          alert('Mensaje enviado exitosamente');
+        }, function(error) {
+          alert('Error al enviar: ' + JSON.stringify(error));
+        });
+    });
+  })();
+</script>
+
 <div class="marquee-container">
              <div class="marquee-content" style="font-size: 70px";>
                 
